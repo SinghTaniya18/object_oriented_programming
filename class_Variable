@@ -1,12 +1,16 @@
-class Student:
-    class_year = 2025
-    num_student = 0
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-        Student.num_student += 1
-Student1 = Student("ABC", 24)
-Student2 = Student("DEF", 26)
-Student3 = Student("ghi", 22)
-print(Student.num_student)
-print(f"{Student1.name} is {Student1.age} and from {Student.class_year} and this student one of {Student.num_student}")
+class Car:
+    wheels = 4  # class variable
+
+    def __init__(self, brand):
+        self.brand = brand  # instance variable
+
+car1 = Car("BMW")
+car2 = Car("Audi")
+
+print(car1.wheels)  # 4
+print(car2.wheels)  # 4
+
+Car.wheels = 6
+
+print(car1.wheels)  # 6
+print(car2.wheels)  # 6
