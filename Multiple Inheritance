@@ -12,3 +12,7 @@ class C(A, B):  # Inheriting from both A and B
 obj = C()
 obj.greet()
 obj.welcome()
+
+Output:
+Hello from A
+Welcome from B
