@@ -1,0 +1,14 @@
+class A:
+    def greet(self):
+   print("Hello from A")
+
+class B:
+    def welcome(self):
+        print("Welcome from B")
+
+class C(A, B):  # Inheriting from both A and B
+    pass
+
+obj = C()
+obj.greet()
+obj.welcome()
